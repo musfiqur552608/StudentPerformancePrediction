@@ -1,0 +1,127 @@
+{
+  "editor.fontFamily": "fira code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.tabSize": 3,
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "cSpell.userWords": ["ctext", "donatetheblood", "rony", "signin", "usernav"],
+  "liveServer.settings.donotVerifyTags": true,
+  "git.ignoreWindowsGit27Warning": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  "editor.quickSuggestions": {
+    "strings": false
+  },
+  "explorer.confirmDelete": false,
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "files.autoSave": "afterDelay",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.pyc": "default",
+    "*.exe": "default",
+    "*.py": "default",
+    "*.h5": "sqlite-viewer.option"
+  },
+  "python.pythonPath": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+  "workbench.iconTheme": "vscode-icons",
+  "material-icon-theme.showWelcomeMessage": false,
+  "window.menuBarVisibility": "visible",
+  "terminal.integrated.gpuAcceleration": "off",
+  "cmake.configureOnOpen": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "none",
+  "python.defaultInterpreterPath": "D:\\anconda\\envs\\myenv\\python.exe",
+  "git.autofetch": true,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "javascript.validate.enable": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "gitlens.hovers.annotations.details": false,
+  "html.hover.documentation": false,
+  "html.hover.references": false,
+  "css.hover.references": false,
+  "less.hover.documentation": false,
+  "less.hover.references": false,
+  "scss.hover.references": false,
+  "scss.hover.documentation": false,
+  "editor.hideCursorInOverviewRuler": false,
+  "gitlens.hovers.annotations.changes": false,
+  "gitlens.hovers.annotations.enabled": false,
+  "gitlens.hovers.autolinks.enhanced": false,
+  "gitlens.hovers.avatars": false,
+  "gitlens.hovers.currentLine.details": false,
+  "gitlens.hovers.currentLine.changes": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.hovers.pullRequests.enabled": false,
+  "css.hover.documentation": false,
+  "terminal.integrated.showLinkHover": false,
+  "npm.fetchOnlinePackageInfo": false,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#101213",
+    "terminal.foreground": "#2ce71b",
+    "terminalCursor.background": "#a07539",
+    "terminalCursor.foreground": "#da4112",
+    "terminal.ansiBlack": "#29363a",
+    "terminal.ansiBlue": "#0D6678",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#0D6678",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#95C085",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#FB543F",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8F4673",
+    "terminal.ansiRed": "#e0a22d",
+    "terminal.ansiWhite": "#da922d",
+    "terminal.ansiYellow": "#ec7513"
+  },
+  "terminal.integrated.fontFamily": "monospace",
+  "workbench.colorTheme": "SynthWave '84",
+  "editor.fontFamily": "fira code,Consolas, 'Courier New', monospace"
+}
