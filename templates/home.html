@@ -203,6 +203,9 @@
       padding: 5px;
       background-color: skyblue;
     }
+    h4{
+      font-size: 18px;
+    }
   </style>
   <title>Student Performance Prediction</title>
 
@@ -242,9 +245,9 @@
           <div class="col-md-3">
             <!-- Here set the input text -->
             <h1>Performance</h1>
-            <div class="alert alert-primary" role="alert" style="width: 400px; height:100px;">
+            <div class="alert alert-primary" role="alert" style="width: 400px; height:100px; text-align:center;">
               
-              {{ mytext }}
+              <h2 class="font-weight-bold" style="padding: 15px;">{{ mytext }}</h2>
             
             </div>
           </div>    
@@ -260,8 +263,8 @@
 
         <div class="row">
 
-          <div class="col-md-4">
-            <div class="alert alert-primary" role="alert" style=" height:60vh;">  
+          <div class="col-md-4" ">
+            <div class="alert alert-primary" role="alert" style=" height:50vh;">  
                 <h4>Student ID  : {{ sid }}</h4>    
                 <h4>Sex         : {{sex}}</h4>
                 <h4>Age         : {{age}}  </h4>     
@@ -278,7 +281,7 @@
         </div>
           
         <div class="col-md-4">
-            <div class="alert alert-primary" role="alert" style=" height:60vh;">    
+            <div class="alert alert-primary" role="alert" style=" height:50vh;">    
                 <h4>reason      : {{reason}}</h4>    
                 <h4>guardian    : {{guardian}}</h4>
                 <h4>traveltime  : {{traveltime}}</h4>
@@ -295,7 +298,7 @@
             
         </div>
         <div class="col-md-4">
-            <div class="alert alert-primary" role="alert" style=" height:60vh;">    
+            <div class="alert alert-primary" role="alert" style=" height:50vh;">    
                 <h4>higher      : {{higher}} </h4>   
                 <h4>internet    : {{internet}}</h4>
                 <h4>famrel      : {{famrel}}</h4>

@@ -44,9 +44,9 @@ def studentperformance(request):
                     student_id.address = "Rural"
 
                 if student_id.famsize == 0:
-                    student_id.famsize = "LE3"
+                    student_id.famsize = "Less Than or Equal 3"
                 else:
-                    student_id.famsize = "GT3"
+                    student_id.famsize = "Greater than 3"
                 
                 if student_id.Pstatus == 0:
                     student_id.Pstatus = "Living Together"
@@ -56,24 +56,24 @@ def studentperformance(request):
                 if student_id.Medu == 0:
                     student_id.Medu = "None"
                 elif student_id.Medu == 1:
-                    student_id.Medu = "primary education"
+                    student_id.Medu = "Primary education"
                 elif student_id.Medu == 2:
                     student_id.Medu = "5th to 9th grade"
                 elif student_id.Medu == 3:
-                    student_id.Medu = "secondary education"
+                    student_id.Medu = "Secondary education"
                 else:
-                    student_id.Medu = "higher education"
+                    student_id.Medu = "Higher education"
 
                 if student_id.Fedu == 0:
                     student_id.Fedu = "None"
                 elif student_id.Fedu == 1:
-                    student_id.Fedu = "primary education"
+                    student_id.Fedu = "Primary education"
                 elif student_id.Fedu == 2:
                     student_id.Fedu = "5th to 9th grade"
                 elif student_id.Fedu == 3:
-                    student_id.Fedu = "secondary education"
+                    student_id.Fedu = "Secondary education"
                 else:
-                    student_id.Fedu = "higher education"
+                    student_id.Fedu = "Higher education"
                 
                 if student_id.Mjob == 0:
                     student_id.Mjob = "Teacher"
@@ -107,7 +107,7 @@ def studentperformance(request):
                     student_id.reason = "Other"
 
                 if student_id.guardian == 0:
-                    student_id.guardian = "Mothee"
+                    student_id.guardian = "Mother"
                 elif student_id.guardian == 1:
                     student_id.guardian = "Father"
                 else:
@@ -130,6 +130,131 @@ def studentperformance(request):
                     student_id.studytime = "5 to 10h"
                 else:
                     student_id.studytime = "Greater Than 10h"
+
+                if student_id.schoolsup==0:
+                    student_id.schoolsup="No"
+                else:
+                    student_id.schoolsup="Yes"
+                
+                if student_id.famsup==0:
+                    student_id.famsup="No"
+                else:
+                    student_id.famsup="Yes"
+                
+                if student_id.paid==0:
+                    student_id.paid="No"
+                else:
+                    student_id.paid="Yes"
+
+                if student_id.activities==0:
+                    student_id.activities="No"
+                else:
+                    student_id.activities="Yes"
+                
+                if student_id.nursery==0:
+                    student_id.nursery="No"
+                else:
+                    student_id.nursery="Yes"
+                
+                if student_id.higher==0:
+                    student_id.higher="No"
+                else:
+                    student_id.higher="Yes"
+                
+                if student_id.internet==0:
+                    student_id.internet="No"
+                else:
+                    student_id.internet="Yes"
+                
+                if student_id.famrel == 1:
+                    student_id.famrel = "Very bad"
+                elif student_id.famrel == 2:
+                    student_id.famrel = "Bad"
+                elif student_id.famrel == 3:
+                    student_id.famrel = "Good"
+                elif student_id.famrel == 4:
+                    student_id.famrel = "Very Good"
+                else:
+                    student_id.famrel = "Excellent"
+                
+                if student_id.freetime == 1:
+                    student_id.freetime = "Very low"
+                elif student_id.freetime == 2:
+                    student_id.freetime = "Low"
+                elif student_id.freetime == 3:
+                    student_id.freetime = "Average"
+                elif student_id.freetime == 4:
+                    student_id.freetime= "High"
+                else:
+                    student_id.freetime = "Very High"
+
+                if student_id.health == 1:
+                    student_id.health = "Very bad"
+                elif student_id.health == 2:
+                    student_id.health = "Bad"
+                elif student_id.health == 3:
+                    student_id.health = "Normal"
+                elif student_id.health == 4:
+                    student_id.health = "Good"
+                else:
+                    student_id.health = "Very Good"
+                
+                if student_id.quiz == 0:
+                    student_id.quiz = "Very bad"
+                elif student_id.quiz == 1:
+                    student_id.quiz = "Bad"
+                elif student_id.quiz == 2:
+                    student_id.quiz = "Normal"
+                elif student_id.quiz == 3:
+                    student_id.quiz = "Good"
+                else:
+                    student_id.quiz = "Very Good"
+                
+                if student_id.assignment == 0:
+                    student_id.assignment = "Very bad"
+                elif student_id.assignment == 1:
+                    student_id.assignment = "Bad"
+                elif student_id.assignment == 2:
+                    student_id.assignment = "Normal"
+                elif student_id.assignment == 3:
+                    student_id.assignment = "Good"
+                else:
+                    student_id.assignment = "Very Good"
+                
+                if student_id.exam1 == 0:
+                    student_id.exam1 = "Very bad"
+                elif student_id.exam1 == 1:
+                    student_id.exam1 = "Bad"
+                elif student_id.exam1 == 2:
+                    student_id.exam1 = "Normal"
+                elif student_id.exam1 == 3:
+                    student_id.exam1 = "Good"
+                else:
+                    student_id.exam1 = "Very Good"
+                
+                if student_id.exam2 == 0:
+                    student_id.exam2 = "Very bad"
+                elif student_id.exam2 == 1:
+                    student_id.exam2 = "Bad"
+                elif student_id.exam2 == 2:
+                    student_id.exam2 = "Normal"
+                elif student_id.exam2 == 3:
+                    student_id.exam2 = "Good"
+                else:
+                    student_id.exam2 = "Very Good"
+                
+                if perform == 0:
+                    perform = "Very bad"
+                elif perform == 1:
+                    perform = "Bad"
+                elif perform == 2:
+                    perform = "Normal"
+                elif perform == 3:
+                    perform = "Good"
+                else:
+                    perform = "Very Good"
+
+                
                 ######################################################################################
                 mydict ={
                     "mytext" : perform,
