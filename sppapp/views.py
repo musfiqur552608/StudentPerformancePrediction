@@ -3,6 +3,8 @@ from django.http import HttpResponse, JsonResponse
 import json
 import requests
 import os
+from sklearn.ensemble import RandomForestClassifier
+
 import pandas as pd
 from sklearn.neural_network import MLPClassifier
 import numpy as np
@@ -23,15 +25,19 @@ def studentperformance(request):
         for student_id in student_data:
             if sid == str(student_id):
                 df=pd.read_csv(file)
-                y = df.iloc[:,29]
-                x = df.iloc[:,:29]
-                model=MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1)
+                y = df['final']
+                x = df.drop('final',axis=1)
+                model= RandomForestClassifier(random_state=1,n_estimators=100)
+                
+                # model=MLPClassifier(solver='adam', alpha=1e-5, hidden_layer_sizes=(25, 1), random_state=1)
                 model.fit(x,y)
+                
                 k=[student_id.sex,student_id.age,student_id.address,student_id.famsize,student_id.Pstatus,student_id.Medu,student_id.Fedu,student_id.Mjob,student_id.Fjob,student_id.reason,student_id.guardian, student_id.traveltime,student_id.studytime,student_id.failures,student_id.schoolsup,student_id.famsup,student_id.paid,student_id.activities,student_id.nursery,student_id.higher,student_id.internet,student_id.famrel,student_id.freetime,student_id.health,student_id.absences,student_id.quiz,student_id.assignment,student_id.exam1,student_id.exam2]
                 kz=np.array(k).reshape(-1,29)
-                print(model.predict(kz))
+                # print(model.predict(kz))
                 k = model.predict(kz)
                 perform = k[0]
+                print('Predicted: '+ str(model.score(kz,k)))
                 ######################################################################################
                 if student_id.sex==0:
                     student_id.sex="Female"
@@ -248,7 +254,7 @@ def studentperformance(request):
                 elif perform == 1:
                     perform = "Bad"
                 elif perform == 2:
-                    perform = "Normal"
+                    perform = "Average"
                 elif perform == 3:
                     perform = "Good"
                 else:
